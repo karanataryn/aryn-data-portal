@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom Aryn colors
+				aryn: {
+					blue: {
+						DEFAULT: '#1a365d', 
+						light: '#2c5282',
+					},
+					teal: {
+						DEFAULT: '#38b2ac',
+						light: '#4fd1c5',
+					},
+					purple: {
+						DEFAULT: '#9f7aea',
+						light: '#b794f4',
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +100,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
 			}
 		}
 	},
